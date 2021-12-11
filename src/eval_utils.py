@@ -9,9 +9,6 @@ def accuracy(true, pred):
 
 def binary_f1(true, pred, selected_class=True):
     f1 = None
-    ## YOUR CODE STARTS HERE (~10-15 lines of code) ##
-    ## YOUR CODE ENDS HERE ##
-    # calculate binary f1 on class
     true_pos = 0
     false_pos = 0
     false_neg = 0

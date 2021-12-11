@@ -1,9 +1,5 @@
-# BEGIN - DO NOT CHANGE THESE IMPORTS OR IMPORT ADDITIONAL PACKAGES.
-from keras.initializers import Constant
-from keras.layers import Embedding, LSTM, Dense, SpatialDropout1D
 import torch
 import torch.nn as nn
-# END - DO NOT CHANGE THESE IMPORTS OR IMPORT ADDITIONAL PACKAGES.
 
 
 class ClassificationModel(nn.Module):

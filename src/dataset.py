@@ -9,8 +9,6 @@ UNK_VALUE = 1
 def split_train_val_test(df, props=[.8, .1, .1]):
     assert round(sum(props), 2) == 1 and len(props) >= 2
     train_df, test_df, val_df = None, None, None
-    # split df into train, test, val
-    # df.sample(frac=1).reset_index(drop=True)
     train_len = int(props[0]*df.shape[0])
     test_len = int(props[1]*df.shape[0])
     print(train_len, test_len)
@@ -23,11 +21,6 @@ def split_train_val_test(df, props=[.8, .1, .1]):
 def generate_vocab_map(df, cutoff=2):
     vocab = {"": PADDING_VALUE, "UNK": UNK_VALUE}
     reversed_vocab = {PADDING_VALUE: "", UNK_VALUE: "UNK"}
-
-    ## YOUR CODE STARTS HERE (~5-15 lines of code) ##
-    # hint: start by iterating over df["tokenized"]
-    # count number of items in vocab and add them
-    # to vocab if they appear more than cutoff times
 
     token_counts = Counter()
     for tokens in df["action_tokenized"]:
