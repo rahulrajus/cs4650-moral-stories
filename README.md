@@ -3,15 +3,10 @@ This repository provides code for preprocessing and classifying actions using th
 
 Structure:
 * src/
-
-** dataset.py: Contains code for loading & tokenizing dataset
-
-** eval_utils.py: Contains code for calculating F-1 score and Accuracy
-
-** models.py: Contains code for our final LSTM
-
-** preprocess.py: Contains code for cleaning text 
-
+    * dataset.py: Contains code for loading & tokenizing dataset
+    * eval_utils.py: Contains code for calculating F-1 score and Accuracy
+    * models.py: Contains code for our final LSTM
+    * preprocess.py: Contains code for cleaning text 
 * morality.ipynb: Main notebook for training & evaluating models
 
 ## Download Instructions
